@@ -4,6 +4,7 @@ $(document).ready(function() {
   let mobileWallpaper = $("#mobile_section_05 .wallpaperBox");
   mobileWallpaper.owlCarousel({
     center: true,
+    autoWidth:true,
     items: 1.4,
     loop: false,
     margin:20

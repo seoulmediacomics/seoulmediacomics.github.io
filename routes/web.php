@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 
 //어둠의실력자_페이지
-Route::view('/to-be-a-power-in-the-shadows', '/works_01/index');
+Route::view('/shadows', '/works_01/index');

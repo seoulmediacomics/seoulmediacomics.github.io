@@ -9,6 +9,16 @@
 
   <link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css" />
   <link rel="stylesheet" type="text/css" href="/css/works_01.css?<?=time()?>" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131448537-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131448537-1');
+    </script>
 </head>
 <body data-load="loading" class="">
 <?php
@@ -59,19 +69,16 @@ try {
         <div class="innerWrap">
             <div class="title"><img src="/images/works_01/m_02_2.png" alt="PROMOTION VIDEO" /></div>
             <div class="prom_video">
-                <video controls>
-                    <source src="/images/works_01/intro.mp4" type="video/mp4">
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
+                COMING SOON
             </div>
             <dl class="retailShop">
                 <dt><img src="/images/works_01/m_02_3.png" alt="구입처" /></dt>
                 <dd>
                     <ol class="shopList">
-                        <li><a href="#" class="yes24">예스24</a></li>
-                        <li><a href="#" class="aladin">알라딘</a></li>
-                        <li><a href="#" class="kyobo">교보문고</a></li>
-                        <li><a href="#" class="interpark">인터파크도서</a></li>
+                        <li><a href="http://www.yes24.com/" target="_blank" class="yes24">예스24</a></li>
+                        <li><a href="https://www.aladin.co.kr" target="_blank" class="aladin">알라딘</a></li>
+                        <li><a href="http://www.kyobobook.co.kr" target="_blank" class="kyobo">교보문고</a></li>
+                        <li><a href="http://book.interpark.com/bookPark" target="_blank" class="interpark">인터파크도서</a></li>
                     </ol>
                 </dd>
             </dl>
@@ -94,10 +101,10 @@ try {
                     </div>
                 </dt>
                 <dd>
-                    “내 이름은 섀도우. 어둠 속에 숨어서, 어둠을 사냥하는 자…….”<br />
+                    <span>“내 이름은 섀도우. 어둠 속에 숨어서, 어둠을 사냥하는 자…….”</span><br />
                     <br />
-                    이런 중2병 설정 놀이를 하고 있었는데.<br />
-                    어라? 설마 이게 현실이 된 건가?!<br />
+                    <em>이런 중2병 설정 놀이를 하고 있었는데.<br />
+                    어라? 설마 이게 현실이 된 건가?!</em><br />
                     <br />
                     평소에는 힘을 숨기고 일반인으로 살면서 암암리에 스토리에 개입하여 실력을 보여주는 『어둠의 실력자』를 동경하는 소년, 시드.<br />
                     이세계에서 전생한 그는 간절한 꿈이었던 『어둠의 실력자』 설정을 즐기기 위해, 망상으로 만들어낸
@@ -139,11 +146,11 @@ try {
                                 <p>・ 성별 : 남성</p>
                                 <p>・ 연령 : 15</p>
                             </div>
-                            일반인에게는 일반인의 싸움이 있다.<br />
+                            엑스트라에게는 엑스트라의 싸움이 있다.<br />
                             <br />
                             『어둠의 실력자』가 되기 위해 가혹한 수행을 쌓다가, 비극적인 사고를 당해 이세계에서 다시 태어난 소년.<br />
                             <br />
-                            전생에 이루지 못했던 꿈을 이세계에서 실현하기 위해 분투 중.<br />
+                            전생에 이루지 못했던 꿈을 이세계에서 실현하기 위해 분투 중.
                             어둠의 조직 ‘섀도우 가든’의 창설자인 섀도우의 정체……<br />
                             이지만, 사실 그는 그 조직을 만들어놓기만 했을 뿐이다.<br />
                             군림은 하되 통치하지 않는다.<br />
@@ -177,7 +184,7 @@ try {
                             <br />
                             시드의 치료(실험)에 의해 썩은 고깃덩이 상태에서 부활한 엘프 소녀.<br />
                             자신을 구해준 시드에게 진심으로 고마워하고 그에게 심취하게 되었다.<br />
-                            『섀도우 가든』의 기념비적인 첫 번째 멤버이며, 『일곱 그림자』의 서열 1위. 아무것도 안 하는 시드를 대신해서 실질적인 통치자 역할을 한다.<br />
+                            『섀도우 가든』의 기념비적인 첫 번째 멤버이며, 『일곱 그림자』의 서열 1위. 아무것도 안 하는 시드를 대신해서 실질적인 통치자 역할을 한다.
                             『섀도우 가든』이 급격히 성장한 것은 이 여성이 쓸데없이
                             너무 유능하기 때문이다.
                         </div>
@@ -243,7 +250,7 @@ try {
                             미드갈 학술 학교 학생. 학교 부교장의 양녀.<br />
                             어린 시절에 어머니가 살해되는 장면을 목격했고,
                             그 슬픔 때문에 아티팩트 연구에 몰두하게 되었다.<br />
-                            국내에서는 아티팩트 연구의 제일인자로 알려져 있다.<br />
+                            국내에서는 아티팩트 연구의 제일인자로 알려져 있다.
                             그러나 학교에서는 친구도 잘 사귀지 못해서
                             양아버지가 걱정할 정도. 연구 이외의 일에는 서툴다.
                         </div>
@@ -258,11 +265,13 @@ try {
             <div class="title"><img src="/images/works_01/m_05_title.png" alt="WALLPAPER" /></div>
             <div class="wallpaperBox owl-carousel">
                 <div class="wallItem">
-                    <a href="/images/works_01/wallpaper_03.jpg" download="mobile_wallpaper_01"><img src="/images/works_01/m_05_2.jpg" alt="" /></a>
+                    <a href="/images/works_01/k1-wallpaper1.jpg" download="mobile_wallpaper_01"><img src="/images/works_01/k1-wallpaper1.jpg" alt="" /></a>
                 </div>
+                <!--
                 <div class="wallItem">
-                    <a href="/images/works_01/wallpaper_04.jpg" download="mobile_wallpaper_02"><img src="/images/works_01/m_05_3.jpg" alt="" /></a>
+                    <a href="/images/works_01/k1-wallpaper2.jpg" download="mobile_wallpaper_02"><img src="/images/works_01/k1-wallpaper2.jpg" alt="" /></a>
                 </div>
+                -->
             </div>
             <div class="copyright">
                 ⓒDaisuke Aizawa 2018 / KADOKAWA CORPORATION Illustration: Touzai
@@ -296,16 +305,13 @@ try {
         <div class="innerWrap">
             <div class="title"><img src="/images/works_01/m_02_2.png" alt="PROMOTION VIDEO" /></div>
             <div class="prom_video">
-                <video controls>
-                    <source src="/images/works_01/intro.mp4" type="video/mp4">
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
+                COMING SOON
             </div>
             <ol class="shopList">
-                <li><a href="#" class="yes24">예스24</a></li>
-                <li><a href="#" class="aladin">알라딘</a></li>
-                <li><a href="#" class="kyobo">교보문고</a></li>
-                <li><a href="#" class="interpark">인터파크도서</a></li>
+                <li><a href="http://www.yes24.com/" target="_blank" class="yes24">예스24</a></li>
+                <li><a href="https://www.aladin.co.kr" target="_blank" class="aladin">알라딘</a></li>
+                <li><a href="http://www.kyobobook.co.kr" target="_blank" class="kyobo">교보문고</a></li>
+                <li><a href="http://book.interpark.com/bookPark" target="_blank" class="interpark">인터파크도서</a></li>
             </ol>
             <div class="copyright"><img src="/images/works_01/m_02_6.png" alt="ⓒDaisuke Aizawa 2018 / KADOKAWA CORPORATION Illustration: Touzai" /></div>
         </div><!-- .innerWrap -->
@@ -320,9 +326,9 @@ try {
                     <div class="sub">
                         <img src="/images/works_01/w_03_desc.png" alt="최강 주인공 x 이세계 전생 x 착각시리어스 코미디!" />
                     </div>
-                    “내 이름은 섀도우. 어둠 속에 숨어서, 어둠을 사냥하는 자…….”<br />
+                    <span>“내 이름은 섀도우. 어둠 속에 숨어서, 어둠을 사냥하는 자…….”</span><br />
                     <br />
-                    이런 중2병 설정 놀이를 하고 있었는데. 어라? 설마 이게 현실이 된 건가?!<br />
+                    <em>이런 중2병 설정 놀이를 하고 있었는데. 어라? 설마 이게 현실이 된 건가?!</em><br />
                     <br />
                     평소에는 힘을 숨기고 일반인으로 살면서 암암리에 스토리에 개입하여 실력을 보여주는 『어둠의 실력자』를 동경하는 소년, 시드.<br />
                     이세계에서 전생한 그는 간절한 꿈이었던 『어둠의 실력자』 설정을 즐기기 위해, 망상으로 만들어낸
@@ -378,11 +384,11 @@ try {
                                     <p>・성별 : 남성</p>
                                     <p>・연령 : 15</p>
                                 </div>
-                                일반인에게는 일반인의 싸움이 있다.<br />
+                                엑스트라에게는 엑스트라의 싸움이 있다.<br />
                                 <br />
                                 『어둠의 실력자』가 되기 위해 가혹한 수행을 쌓다가,<br />
                                 비극적인 사고를 당해 이세계에서 다시 태어난 소년.<br />
-                                전생에 이루지 못했던 꿈을 이세계에서 실현하기 위해 분투 중.<br />
+                                전생에 이루지 못했던 꿈을 이세계에서 실현하기 위해 분투 중.
                                 어둠의 조직 ‘섀도우 가든’의 창설자인 섀도우의 정체……이지만,<br />
                                 사실 그는 그 조직을 만들어놓기만 했을 뿐이다.<br />
                                 군림은 하되 통치하지 않는다.<br />
@@ -401,7 +407,7 @@ try {
                                 <br />
                                 시드의 치료(실험)에 의해 썩은 고깃덩이 상태에서 부활한 엘프 소녀.<br />
                                 자신을 구해준 시드에게 진심으로 고마워하고 그에게 심취하게 되었다.<br />
-                                『섀도우 가든』의 기념비적인 첫 번째 멤버이며, 『일곱 그림자』의 서열 1위. 아무것도 안 하는 시드를 대신해서 실질적인 통치자 역할을 한다.<br />
+                                『섀도우 가든』의 기념비적인 첫 번째 멤버이며, 『일곱 그림자』의 서열 1위. 아무것도 안 하는 시드를 대신해서 실질적인 통치자 역할을 한다.
                                 『섀도우 가든』이 급격히 성장한 것은 이 여성이 쓸데없이 너무 유능하기 때문이다.
                             </div>
                         </li>
@@ -434,7 +440,7 @@ try {
                                 <br />
                                 미드갈 학술 학교 학생. 학교 부교장의 양녀.<br />
                                 어린 시절에 어머니가 살해되는 장면을 목격했고, 그 슬픔 때문에 아티팩트 연구에 몰두하게 되었다.<br />
-                                국내에서는 아티팩트 연구의 제일인자로 알려져 있다.<br />
+                                국내에서는 아티팩트 연구의 제일인자로 알려져 있다.
                                 그러나 학교에서는 친구도 잘 사귀지 못해서 양아버지가 걱정할 정도. 연구 이외의 일에는 서툴다.
                             </div>
                         </li>
@@ -450,13 +456,15 @@ try {
             <div class="wallpaperBoxWrap">
                 <div class="wallpaperBox owl-carousel">
                     <div class="wallItem">
-                        <span><img src="/images/works_01/w_05_2.jpg" alt="" /></span>
-                        <a href="/images/works_01/w_05_2.jpg" download="wallpaper01" class="wallpaper_download">DOWNLOAD▽</a>
+                        <span><img src="/images/works_01/k1-wallpaper3.jpg" alt="" /></span>
+                        <a href="/images/works_01/k1-wallpaper3.jpg" download="wallpaper01" class="wallpaper_download">DOWNLOAD▽</a>
                     </div>
+                    <!--
                     <div class="wallItem">
-                        <span><img src="/images/works_01/w_05_3.jpg" alt="" /></span>
-                        <a href="/images/works_01/w_05_3.jpg" download="wallpaper02" class="wallpaper_download">DOWNLOAD▽</a>
+                        <span><img src="/images/works_01/k1-wallpaper4.jpg" alt="" /></span>
+                        <a href="/images/works_01/k1-wallpaper4.jpg" download="wallpaper02" class="wallpaper_download">DOWNLOAD▽</a>
                     </div>
+                    -->
                 </div>
             </div><!-- .wallpaperBoxWrap -->
             <div class="copyright">
