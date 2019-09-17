@@ -61,6 +61,7 @@ $(window).on('load', function() {
   let winWidth = $(window).width();
   let winHeight = $(window).height();
   //alert('너비 : ' + winWidth + ' \n높이 : ' + winHeight);
+
   
   $('body').attr('data-load', 'complete');
   setTimeout(function() {
