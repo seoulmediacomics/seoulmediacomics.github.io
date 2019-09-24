@@ -22,21 +22,33 @@
 </head>
 <body data-load="loading" class="">
 <?php
-date_default_timezone_set('Asia/Seoul');
-try {
-  $date1 = new DateTime();
-  $date2 = new DateTime( '2019-09-25' );
-  $interval = $date2->diff($date1);
-  $dDay_no = $interval->days + 1;
-  if($dDay_no < 10) {
-    $dDay_no = '0'.$dDay_no;
+  date_default_timezone_set('Asia/Seoul');
+  $timeNow = date('Y-m-d H:i:s');
+  $timeTarget = '2019-09-25 00:00:00';
+  $str_now = strtotime($timeNow);
+  $str_target = strtotime($timeTarget);
+  $dayOpen = '';
+  $dDay_div = false;
+  if($str_now >= $str_target) {
+    $dDay_div = true;
+    $dayOpen = 'dayOpen';
+  } else {
+    try {
+      $date1 = new DateTime();
+      $date2 = new DateTime( '2019-09-25' );
+      $interval = $date2->diff($date1);
+      $dDay_no = $interval->days + 1;
+      if($dDay_no < 10) {
+        $dDay_no = '0'.$dDay_no;
+      }
+      $dDay =  str_split($dDay_no);
+      //echo $dDay[0]. ' - '.$dDay[1];
+      //print_r($date1);
+    }catch (Exception $e){
+      echo $e;
+    }
   }
-  $dDay =  str_split($dDay_no);
-  //echo $dDay[0]. ' - '.$dDay[1];
-  //print_r($date1);
-}catch (Exception $e){
-  echo $e;
-}
+
 ?>
 <div class="loadingBox">
     <div class="ball01"></div><div class="ball02"></div>
@@ -58,11 +70,15 @@ try {
         <div class="innerWrap">
             <div class="title"><img src="/images/works_01/m_01_2.png" alt="" /></div>
             <div class="dDayBox">
+            <?php if(!$dDay_div) { ?>
                 <img src="/images/works_01/m_01_3.png" alt="" />
                 <ol class="dDay_num">
                     <li class="dDay_1"><img src="/images/works_01/no_0<?=$dDay[0]?>.png"></li>
                     <li class="dDay_2"><img src="/images/works_01/no_0<?=$dDay[1]?>.png"></li>
                 </ol>
+            <?php } else { ?>
+                <img src="/images/works_01/m_01_3_blank.png" alt="" />
+            <?php } ?>
             </div>
         </div><!-- .innerWrap -->
     </section><!-- #mobile_section_01 -->
@@ -298,15 +314,19 @@ try {
 
 <div id="wrapper_desktop" class="wrapper">
 
-    <section class="pcSection" id="pc_section_01">
+    <section class="pcSection <?=$dayOpen;?>" id="pc_section_01">
         <div class="innerWrap">
             <div class="title"><img src="/images/works_01/w_01_2.png" alt="" /></div>
             <div class="dDayBox">
+            <?php if(!$dDay_div) { ?>
                 <img src="/images/works_01/m_01_3.png" alt="" />
                 <ol class="dDay_num">
                     <li class="dDay_1"><img src="/images/works_01/no_0<?=$dDay[0]?>.png"></li>
                     <li class="dDay_2"><img src="/images/works_01/no_0<?=$dDay[1]?>.png"></li>
                 </ol>
+            <?php } else { ?>
+                <img src="/images/works_01/m_01_3_blank.png" alt="" />
+            <?php } ?>
             </div>
         </div><!-- .innerWrap -->
     </section><!-- #pc_section_01 -->
@@ -506,5 +526,17 @@ try {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/js/owl.carousel.min.js"></script>
 <script src="/js/works_01.js?<?=time()?>"></script>
+
+<script>
+$(function() {
+    $('.shopList li a').on('click', function(e) {
+        let shop = $(this).attr('class');
+        gtag('event', shop, {
+            'event_category' : 'shopClickEvent'
+        });
+    });
+});
+</script>
+
 </body>
 </html>
