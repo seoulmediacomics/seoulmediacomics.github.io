@@ -929,8 +929,28 @@
     </div><!-- #content-wrapper -->
 </div><!-- #wrapper -->
 
+<?php
+    $thisTime = strtotime(date('Y-m-d H:i:s'));
+    $banner_float_start_date = strtotime('2020-02-25 17:10:00'); //시작일
+    $banner_float_end_date = strtotime('2020-03-31 23:59:59'); //종료일
+    $banner_isShow = false;
+    $banner_float_diff_start = $banner_float_start_date - $thisTime;
+    $banner_float_diff_end = $banner_float_end_date - $thisTime;
+    if ( $banner_float_diff_start <= 0 && $banner_float_diff_end >= 0 ) { //기간내일경우만_노출
+?>
+<div id="contestPop" data-show="false">
+    <button type="button" id="contestPopClose">오늘 하루 보지 않기<i class="material-icons">close</i></button>
+    <div class="contentBox">
+        <a href="https://contest.seoulmediacomics.com/?utm_source=homepage&utm_medium=popup&utm_campaign=%EA%B3%B5%EB%AA%A8%EC%A0%84" target="_blank">
+            <img src="/images/contest_2020.png" alt="2020 서울미디어코믹스 웹툰 원작 공모전" />
+        </a>
+    </div>
+</div><!-- #contestPop --->
+<?php } ?>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="/js/jquery.cookie.js"></script>
 <script src="/js/jquery.easing.min.js"></script>
 <script src="/js/jquery.mousewheel.min.js"></script>
 <script src="/js/viewScroller.js"></script>
@@ -938,6 +958,18 @@
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4e5713e152f8e6fbfdc7b66c2b9c8b07&libraries=services"></script>
 <script src="/js/smc.js"></script>
 <script>
+    $(function() {
+        if($.cookie('shop_float_banner') != 'hide') { //배너를보여라
+            $('#contestPop').attr('data-show', 'true');
+        }
+        $('#contestPopClose').on('click', function() {
+            $('#contestPop').attr('data-show', 'false');
+            var todayDate = new Date();
+            var expirationDate = new Date(todayDate.getFullYear(), todayDate.getMonth(), todayDate.getDate()+1, 0, 0, 0); //오늘자정
+            $.cookie('shop_float_banner', 'hide', { expires: expirationDate });
+        });
+    });
+
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     mapOption = {
       center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표

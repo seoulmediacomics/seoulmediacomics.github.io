@@ -242,6 +242,11 @@ dd   { margin-inline-start:0; margin-left:0; }
                 .contact_email a  { color:#000; }
                 .addrCopy   { display:inline-block; height:24px; padding:0 5px; font-size:12px; border:1px solid #ccc; background-color:#f8f8f8; }
 
+#contestPop { display:none; position:fixed; z-index:999; left:5%; bottom:10%; width:90%; max-width:500px; box-shadow:0 3px 7px rgba(0,0,0,0.3); border-radius:5px; }
+#contestPop[data-show="true"]   { display:block; }
+#contestPop #contestPopClose    { position:absolute; right:-1px; top:-30px; height:30px; padding:0 5px 0 10px; border:1px solid #555; background-color:#fff; }
+#contestPop #contestPopClose i  { vertical-align:middle; line-height:30px; }
+#contestPop .contentBox img { max-width:100%; display:block; }
 
 @media all and (max-width:1023px) {
 html, body  { height:auto; }
@@ -356,6 +361,8 @@ html, body  { height:auto; }
                         .owl-nav    { position:static; }
                         .owl-nav button.owl-prev { position:absolute; left:-20px; top:0; width:20px; height:100%; background-color:transparent !important; border:none !important; }
                         .owl-nav button.owl-next { position:absolute; right:-30px; top:0; width:20px; height:100%; background-color:transparent !important; border:none !important; }
+
+    #contestPop { left:50%; transform:translate(-50%, 0); }
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
