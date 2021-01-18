@@ -60,7 +60,7 @@ dd   { margin-inline-start:0; margin-left:0; }
                 .menu--copyright dl dd a:after    { content:''; position:absolute; right:0; top:0; width:0; height:0; border-top:4px solid red; border-left:4px solid transparent; }
                 .menu--copyright p      { display:none; font-size:11px; }
                 .family--site   { margin-bottom:20px; padding:5px 0; list-style:none; font-size:0; white-space:nowrap; border:1px solid #a4a4a4; }
-                    .family--site li    { position:relative; display:inline-block; width:33.333%; padding:5px 0; text-align:center; vertical-align:top; }
+                    .family--site li    { position:relative; display:inline-block; width:50%; padding:5px 0; text-align:center; vertical-align:top; }
                     .family--site li:after  { content:''; position:absolute; right:0; top:50%; width:1px; height:6px; margin-top:-3px; background-color:#888; }
                     .family--site li:last-child:after   { display:none; }
                     .family--site li a  { display:inline-block; position:relative; padding:2px 5px; color:#777; font-size:12px; text-align:center; line-height:1.4em; }
@@ -217,7 +217,7 @@ dd   { margin-inline-start:0; margin-left:0; }
                         overflow:hidden;
                     }
                     .digitalTeam dl dd .platform a em   { display:block; font-size:12px; font-style:normal; font-weight:normal; }
-                    .digitalTeam dl dd .platform a:nth-child(1) { margin-right:10px; background:rgba(255, 255, 255, 0.7) url('/images/bigtoon.png') no-repeat left center; background-size:auto 100%; }
+                    .digitalTeam dl dd .platform a:nth-child(1) { margin-right:10px; background:rgba(255, 255, 255, 0.7) url('/images/mcomics.png') no-repeat left center; background-size:auto 100%; }
                     .digitalTeam dl dd .platform a:nth-child(2) { background:rgba(255, 255, 255, 0.7) url('/images/mcomics.png') no-repeat left center; background-size:auto 100%; }
 
             .sections-2-6       { }

@@ -25,7 +25,7 @@
     <meta property="og:locale" content="ko_KR" />
 
     <!-- Styles -->
-    <link  rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/viewScroller.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/smc.css?<?=time()?>" />
@@ -85,7 +85,7 @@
             <div class="menu--copyright">
                 <ul class="family--site">
                     <li><a href="https://www.mcomics.co.kr" target="_blank">마녀코믹스</a></li>
-                    <li><a href="https://www.big-toon.com" target="_blank">빅툰</a></li>
+                    <!-- <li><a href="https://www.big-toon.com" target="_blank">빅툰</a></li> -->
                     <li><a href="https://www.ismg.co.kr/" target="_blank">iSMG</a></li>
                 </ul>
                 <dfn>(주)서울미디어코믹스</dfn>
@@ -854,7 +854,7 @@
                                 <dd>
                                     자사 플랫폼 운영을 통해 안정적인 작품 제작과 수익 창출을 도모한다.
                                     <div class="platform">
-                                        <a href="https://www.big-toon.com" target="_blank">빅툰<em>https://www.big-toon.com</em></a>
+                                        <!-- <a href="https://www.big-toon.com" target="_blank">빅툰<em>https://www.big-toon.com</em></a> -->
                                         <a href="https://www.mcomics.co.kr" target="_blank">마녀코믹스<em>https://www.mcomics.co.kr</em></a>
                                     </div>
                                 </dd>
