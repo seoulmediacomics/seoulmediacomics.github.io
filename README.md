@@ -1,1 +1,0 @@
-# seoulmediacomics.github.io
