@@ -896,7 +896,7 @@
                             <div class="addr-info">
                                 <h3>서울미디어코믹스 1사옥</h3>
                                 <p>
-                                    <span>대표실</span> <span>콘텐츠기획1팀</span> <span>콘텐츠기획2팀</span> <span>디지털사업1팀</span> <span>디지털사업2팀</span>
+                                    <span>대표실</span> <span>디지털사업팀</span> <span>윙크</span> <span>점프</span> <span>웹소설</span> <span>코믹히어로</span>
                                 </p>
                                 <address>
                                     서울특별시 용산구 새창로 221-19(한강로 2가)
